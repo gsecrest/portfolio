@@ -5,22 +5,36 @@ const nav = ["About", "Experience", "Projects", "Contact"];
 const experience = [
   {
     title: "Senior Enterprise Support Engineer",
-    company: "Current Company",
-    period: "Present",
+    company: "Ivanti — South Jordan, UT",
+    period: "11/2022 – Present",
     bullets: [
-      "Provide enterprise-level technical support for complex environments",
-      "Collaborate with cross-functional teams to resolve escalated issues",
-      "Build internal tooling to improve team efficiency and visibility",
+      "Lead technical investigations for high-impact enterprise incidents affecting production operations and customer business continuity.",
+      "Perform deep root cause analysis across APIs, SQL Server databases, workflows, integrations, and enterprise applications.",
+      "Troubleshoot REST API integrations by analyzing request/response behavior, authentication flows, payload validation, and backend responses.",
+      "Analyze logs, HAR files, Chrome DevTools output, JavaScript errors, and backend telemetry to isolate performance bottlenecks and service failures.",
+      "Collaborate with Engineering, SRE, Operations, and Product teams to identify permanent fixes and reduce repeat incidents.",
+      "Mentor team members on troubleshooting methodology, escalation handling, and enterprise support best practices.",
     ],
   },
   {
-    title: "Enterprise Support Engineer",
-    company: "Previous Company",
-    period: "Previous Role",
+    title: "Senior Technical Support Engineer",
+    company: "Ivanti",
+    period: "11/2007 – 11/2022",
     bullets: [
-      "Supported enterprise customers across ITSM platform deployments",
-      "Diagnosed and resolved workflow and integration issues",
-      "Documented resolutions and contributed to knowledge base",
+      "Delivered advanced troubleshooting and escalation support for enterprise application environments.",
+      "Administered and supported SQL Server environments to identify and isolate customer-impacting issues.",
+      "Investigated backend application failures, workflow processing issues, and integration-related defects.",
+      "Conducted debugging and analysis of backend scripts, XML, XSLT, JavaScript, and API-related functionality.",
+    ],
+  },
+  {
+    title: "Programmer Analyst – IT Production Support",
+    company: "Capital One Financial (GreenPoint Mortgage) — Novato, CA",
+    period: "2005 – 2007",
+    bullets: [
+      "Served as Subject Matter Expert (SME) and escalation resource for Tier II and Tier III production support.",
+      "Developed SQL queries, procedures, and scripts supporting operational and business requests.",
+      "Conducted root cause analysis on production incidents to identify workarounds and long-term remediation paths.",
     ],
   },
 ];
@@ -67,8 +81,9 @@ export default function Portfolio() {
             Glenn Secrest
           </h1>
           <p className="text-lg text-gray-500 max-w-xl leading-relaxed">
-            Enterprise support professional focused on ITSM platforms, workflow automation,
-            and building internal tools that help teams work faster and smarter.
+            Enterprise support and operations engineer with extensive experience supporting complex
+            production environments, enterprise applications, APIs, and backend systems across cloud
+            and on-prem environments.
           </p>
           <div className="mt-8 flex gap-4">
             <a
@@ -94,13 +109,18 @@ export default function Portfolio() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <p className="text-gray-600 leading-relaxed mb-4">
-                I&apos;m a Senior Enterprise Support Engineer with deep experience in ITSM platforms,
-                workflow configuration, and enterprise integrations. I specialize in diagnosing
-                complex technical issues and turning them into lasting solutions.
+                I&apos;m a Senior Enterprise Support Engineer at Ivanti with 18+ years of experience
+                supporting complex production environments, enterprise applications, REST APIs, SQL Server,
+                and backend systems across cloud and on-prem infrastructure.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-4">
+                I specialize in high-impact incident investigations, deep root cause analysis, and
+                cross-functional collaboration with Engineering, SRE, and Product teams to deliver
+                permanent resolutions.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Beyond support, I build internal tools that eliminate manual work — from query
-                apps that surface workflow ownership to dashboards that help teams act faster.
+                I also build internal tools that eliminate manual work and help teams move faster —
+                including the RO Workflow Query app for identifying team ownership of request offerings.
               </p>
             </div>
             <div className="space-y-4">
@@ -109,7 +129,7 @@ export default function Portfolio() {
                   Expertise
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["ITSM", "Ivanti", "SQL", "Workflow Automation", "Next.js", "TypeScript", "Enterprise Support"].map((skill) => (
+                  {["Ivanti", "REST APIs", "SQL Server", "Incident Response", "Root Cause Analysis", "JavaScript", "XML / XSLT", "Linux", "Windows Server", "Chrome DevTools", "HAR & Log Analysis", "Workflow Automation", "Next.js", "TypeScript"].map((skill) => (
                     <span
                       key={skill}
                       className="text-sm text-gray-600 bg-gray-50 border border-gray-200 px-3 py-1 rounded-full"
@@ -185,14 +205,24 @@ export default function Portfolio() {
             Contact
           </h2>
           <p className="text-gray-600 mb-6 max-w-md">
-            Have a question or want to connect? Feel free to reach out.
+            Have a question or want to connect? Feel free to reach out by email or LinkedIn.
           </p>
-          <a
-            href="mailto:glenn707@gmail.com"
-            className="inline-block bg-gray-900 text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors"
-          >
-            glenn707@gmail.com
-          </a>
+          <div className="flex gap-4 flex-wrap">
+            <a
+              href="mailto:glenn707@gmail.com"
+              className="inline-block bg-gray-900 text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors"
+            >
+              glenn707@gmail.com
+            </a>
+            <a
+              href="https://www.linkedin.com/in/glennsecrest/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block border border-gray-200 text-gray-700 text-sm font-medium px-5 py-2.5 rounded-lg hover:border-gray-400 transition-colors"
+            >
+              LinkedIn
+            </a>
+          </div>
         </section>
 
       </main>
