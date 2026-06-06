@@ -46,6 +46,7 @@ const projects = [
       "Quickly identify which team owns each request offering so you can manually correct team assignments without hunting through workflows.",
     tech: ["Next.js", "TypeScript", "SQL Server", "Tailwind CSS"],
     github: "https://github.com/gsecrest/workflow-query-app",
+    diagram: "/er-diagram",
   },
   {
     name: "RO Attribute Query",
@@ -53,6 +54,7 @@ const projects = [
       "List form field attributes and workflow block assignments for Ivanti request offerings. Two-tab results show form fields and workflow blocks side by side.",
     tech: ["Next.js", "TypeScript", "SQL Server", "Tailwind CSS"],
     github: "https://github.com/gsecrest/ro-attribute-query",
+    diagram: "/er-diagram",
   },
   {
     name: "Personal Portfolio",
@@ -215,16 +217,26 @@ export default function Portfolio() {
               >
                 <div className="flex items-start justify-between gap-2 mb-2">
                   <h3 className="text-base font-semibold text-gray-900">{project.name}</h3>
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-xs text-gray-400 hover:text-gray-700 transition-colors shrink-0"
-                    >
-                      GitHub ↗
-                    </a>
-                  )}
+                  <div className="flex gap-3 shrink-0">
+                    {project.diagram && (
+                      <a
+                        href={project.diagram}
+                        className="text-xs text-gray-400 hover:text-gray-700 transition-colors"
+                      >
+                        ER Diagram ↗
+                      </a>
+                    )}
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-gray-400 hover:text-gray-700 transition-colors"
+                      >
+                        GitHub ↗
+                      </a>
+                    )}
+                  </div>
                 </div>
                 <p className="text-sm text-gray-500 leading-relaxed mb-4 flex-1">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
