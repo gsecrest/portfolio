@@ -1,6 +1,6 @@
 "use client";
 
-const nav = ["About", "Experience", "Projects", "Contact"];
+const nav = ["About", "Experience", "Education", "Projects", "Contact"];
 
 const experience = [
   {
@@ -168,6 +168,22 @@ export default function Portfolio() {
                 </div>
               </div>
             ))}
+          </div>
+        </section>
+
+        {/* Education */}
+        <section id="education" className="py-20 border-b border-gray-100">
+          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-8">
+            Education
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div className="md:col-span-1">
+              <p className="text-sm text-gray-400">Sacramento, CA</p>
+            </div>
+            <div className="md:col-span-3">
+              <h3 className="text-base font-semibold text-gray-900">Bachelor of Science — Computer Science</h3>
+              <p className="text-sm text-gray-500 mt-1">California State University, Sacramento</p>
+            </div>
           </div>
         </section>
 
