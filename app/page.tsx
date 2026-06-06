@@ -57,6 +57,14 @@ const projects = [
     diagram: "/er-diagram",
   },
   {
+    name: "BO Workflow Attributes",
+    description:
+      "Browse workflow block types and team assignments for all Ivanti business objects — Incident, Change, Problem, Knowledge, GRC, and more. Filters by object type, workflow name, block type, and team.",
+    tech: ["Next.js", "TypeScript", "SQL Server", "Tailwind CSS"],
+    github: "https://github.com/gsecrest/workflow-query-app",
+    diagram: "/er-diagram",
+  },
+  {
     name: "Personal Portfolio",
     description:
       "This site — a clean, minimal portfolio built with Next.js and Tailwind CSS, deployed on Vercel with a custom domain.",
