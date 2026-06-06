@@ -45,6 +45,21 @@ const projects = [
     description:
       "Quickly identify which team owns each request offering so you can manually correct team assignments without hunting through workflows.",
     tech: ["Next.js", "TypeScript", "SQL Server", "Tailwind CSS"],
+    github: "https://github.com/gsecrest/workflow-query-app",
+  },
+  {
+    name: "RO Attribute Query",
+    description:
+      "List form field attributes and workflow block assignments for Ivanti request offerings. Two-tab results show form fields and workflow blocks side by side.",
+    tech: ["Next.js", "TypeScript", "SQL Server", "Tailwind CSS"],
+    github: "https://github.com/gsecrest/ro-attribute-query",
+  },
+  {
+    name: "Personal Portfolio",
+    description:
+      "This site — a clean, minimal portfolio built with Next.js and Tailwind CSS, deployed on Vercel with a custom domain.",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    github: "https://github.com/gsecrest/portfolio",
   },
 ];
 
@@ -196,10 +211,22 @@ export default function Portfolio() {
             {projects.map((project, i) => (
               <div
                 key={i}
-                className="border border-gray-200 rounded-xl p-6 hover:border-gray-400 transition-colors"
+                className="border border-gray-200 rounded-xl p-6 hover:border-gray-400 transition-colors flex flex-col"
               >
-                <h3 className="text-base font-semibold text-gray-900 mb-2">{project.name}</h3>
-                <p className="text-sm text-gray-500 leading-relaxed mb-4">{project.description}</p>
+                <div className="flex items-start justify-between gap-2 mb-2">
+                  <h3 className="text-base font-semibold text-gray-900">{project.name}</h3>
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs text-gray-400 hover:text-gray-700 transition-colors shrink-0"
+                    >
+                      GitHub ↗
+                    </a>
+                  )}
+                </div>
+                <p className="text-sm text-gray-500 leading-relaxed mb-4 flex-1">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((t) => (
                     <span
