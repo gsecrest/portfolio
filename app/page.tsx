@@ -1,6 +1,68 @@
 "use client";
 
-const nav = ["About", "Experience", "Education", "Projects", "Contact"];
+const nav = ["About", "Experience", "Education", "Skills", "Projects", "Contact"];
+
+const skills = [
+  {
+    category: "Enterprise Support & Operations",
+    items: [
+      "Enterprise Application Operations",
+      "Production Support Engineering",
+      "Incident Response & Root Cause Analysis",
+      "Backend Diagnostics",
+      "Operational Reliability",
+      "Cross-Functional Collaboration",
+      "Technical Mentoring",
+    ],
+  },
+  {
+    category: "Platforms & Tools",
+    items: [
+      "Ivanti ISM",
+      "SQL Server 2014 / 2016 / 2019",
+      "IIS / Apache",
+      "Wireshark / Fiddler",
+      "Chrome DevTools",
+      "HAR & Log Analysis",
+      "ODBC / Reporting",
+      "Visio",
+    ],
+  },
+  {
+    category: "Programming & Scripting",
+    items: [
+      "SQL / PL/SQL / MS SQL",
+      "JavaScript",
+      "XML / XSLT / JSON",
+      "Bash",
+      "HTML",
+      "Perl",
+      "C# / C / C++",
+      "Java",
+    ],
+  },
+  {
+    category: "Web & App Development",
+    items: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "REST APIs",
+      "Node.js",
+    ],
+  },
+  {
+    category: "Infrastructure & Systems",
+    items: [
+      "Linux (Ubuntu)",
+      "Oracle Solaris / Unix",
+      "Windows Server 2016 / 2019 / 2022",
+      "Cloud & On-Prem Environments",
+      "Workflow Automation",
+    ],
+  },
+];
 
 const experience = [
   {
@@ -209,6 +271,32 @@ export default function Portfolio() {
               <h3 className="text-base font-semibold text-gray-900">Bachelor of Science — Computer Science</h3>
               <p className="text-sm text-gray-500 mt-1">California State University, Sacramento</p>
             </div>
+          </div>
+        </section>
+
+        {/* Skills */}
+        <section id="skills" className="py-20 border-b border-gray-100">
+          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-8">
+            Skills
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {skills.map((group) => (
+              <div key={group.category}>
+                <p className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">
+                  {group.category}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {group.items.map((skill) => (
+                    <span
+                      key={skill}
+                      className="text-sm text-gray-600 bg-gray-50 border border-gray-200 px-3 py-1 rounded-full"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </section>
 
