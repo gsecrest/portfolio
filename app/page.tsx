@@ -124,7 +124,7 @@ const projects = [
       "Browse workflow block types and team assignments for all Ivanti business objects — Incident, Change, Problem, Knowledge, GRC, and more. Filters by object type, workflow name, block type, and team.",
     tech: ["Next.js", "TypeScript", "SQL Server", "Tailwind CSS"],
     github: "https://github.com/gsecrest/workflow-query-app",
-    diagram: "/er-diagram",
+    diagram: "/bo-er-diagram",
   },
   {
     name: "Personal Portfolio",
