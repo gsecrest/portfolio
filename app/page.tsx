@@ -225,10 +225,10 @@ export default function Portfolio() {
           </p>
           <div className="flex gap-4 flex-wrap">
             <a
-              href="mailto:glenn707@gmail.com"
+              href="mailto:secrestg@gmail.com"
               className="inline-block bg-gray-900 text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-gray-700 transition-colors"
             >
-              glenn707@gmail.com
+              secrestg@gmail.com
             </a>
             <a
               href="https://www.linkedin.com/in/glennsecrest/"
