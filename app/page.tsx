@@ -103,9 +103,9 @@ const experience = [
 
 const projects = [
   {
-    name: "RO Workflow Query",
+    name: "Ivanti Workflow Tools",
     description:
-      "Quickly identify which team owns each request offering so you can manually correct team assignments without hunting through workflows.",
+      "Unified toolset for querying Ivanti ITSM workflows. Four pages in one app: RO Team Query (identify team ownership per offering), RO Form Attributes (form field metadata), RO Workflow Blocks (block-level search by type and status), and BO Workflow Attributes (block assignments across all business objects — Incident, Change, Problem, and more).",
     tech: ["Next.js", "TypeScript", "SQL Server", "Tailwind CSS"],
     github: "https://github.com/gsecrest/workflow-query-app",
     diagram: "/er-diagram",
@@ -113,18 +113,10 @@ const projects = [
   {
     name: "RO Attribute Query",
     description:
-      "List form field attributes and workflow block assignments for Ivanti request offerings. Two-tab results show form fields and workflow blocks side by side.",
+      "Query form field attributes and workflow block assignments for Ivanti request offerings, with multi-database support. Includes a dedicated BO Workflow Attributes view that fans out queries across selected databases in parallel and tags results by source.",
     tech: ["Next.js", "TypeScript", "SQL Server", "Tailwind CSS"],
     github: "https://github.com/gsecrest/ro-attribute-query",
     diagram: "/er-diagram",
-  },
-  {
-    name: "BO Workflow Attributes",
-    description:
-      "Browse workflow block types and team assignments for all Ivanti business objects — Incident, Change, Problem, Knowledge, GRC, and more. Filters by object type, workflow name, block type, and team.",
-    tech: ["Next.js", "TypeScript", "SQL Server", "Tailwind CSS"],
-    github: "https://github.com/gsecrest/workflow-query-app",
-    diagram: "/bo-er-diagram",
   },
   {
     name: "Personal Portfolio",
